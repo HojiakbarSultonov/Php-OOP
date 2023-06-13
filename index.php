@@ -91,3 +91,27 @@ $bus = new PublicCar('Mersedes', '2023' );
 //private---- faqat classni ichida ishlaydi
 //protected---- faqat ozini va extend qilingan classlarda ishlaydi
 
+
+
+//Abstract classlar(Mavhum classlar)==================================================
+//Abstract classlar faqat bola elementlar orqali clas yasaladi
+
+
+//interface ===========================================================
+
+interface Animal {
+    public function makeSound();
+    public function Eat();
+}
+
+
+class Dog implements Animal{
+    public function makeSound()
+    {
+       return 'Vov vov';
+    }
+    public function Eat()
+    {
+        return 'Eating meat';
+    }
+}
