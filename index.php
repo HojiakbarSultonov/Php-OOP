@@ -116,24 +116,52 @@ interface Animal {
 //    }
 //}
 
+//trait===================================================
+
+//trait AnimalTrait{
+//    public function Eat()
+//    {
+//        return 'Eating meat';
+//    }
+//};
+//
+//class Dog implements Animal{
+//    use AnimalTrait;
+//
+//    public function make()
+//    {
+//        return 'vow vow';
+//    }
+//};
+//
+//$dog = new Dog;
+//
+//var_dump($dog->Eat());
 
 
-trait AnimalTrait{
-    public function Eat()
-    {
-        return 'Eating meat';
-    }
-};
+//static methods & Property==================
+//
+//class Dog {
+//    public $name;
+//    public static $weight;
+//
+//    public function bark()
+//    {
+//        return 'vov vov';
+//    }
+//
+//    public static function eat()
+//    {
+//        echo 'eating';
+//    }
+//}
+//
+//$bingo = new Dog;
+////echo $bingo->bark();
+//
+//echo Dog::eat();
 
-class Dog implements Animal{
-    use AnimalTrait;
 
-    public function make()
-    {
-        return 'vow vow';
-    }
-};
+//Constants===================ozgarmas qiymat
 
-$dog = new Dog;
-
-var_dump($dog->Eat());
+const BREED = "Doberman";
