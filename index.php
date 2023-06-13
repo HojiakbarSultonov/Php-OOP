@@ -100,18 +100,40 @@ $bus = new PublicCar('Mersedes', '2023' );
 //interface ===========================================================
 
 interface Animal {
-    public function makeSound();
+//    public function makeSound();
     public function Eat();
 }
 
 
-class Dog implements Animal{
-    public function makeSound()
-    {
-       return 'Vov vov';
-    }
+//class Dog implements Animal{
+//    public function makeSound()
+//    {
+//       return 'Vov vov';
+//    }
+//    public function Eat()
+//    {
+//        return 'Eating meat';
+//    }
+//}
+
+
+
+trait AnimalTrait{
     public function Eat()
     {
         return 'Eating meat';
     }
-}
+};
+
+class Dog implements Animal{
+    use AnimalTrait;
+
+    public function make()
+    {
+        return 'vow vow';
+    }
+};
+
+$dog = new Dog;
+
+var_dump($dog->Eat());
