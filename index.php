@@ -83,5 +83,11 @@ class PublicCar extends Car{
 $bus = new PublicCar('Mersedes', '2023' );
 
 //var_dump($bus->Ballon = '20');
-//var_dump($bus->driving());
+//var_dump($bus-
+
+
+// Access Modifiers===================================================
+//public -----istalgan joyda ishlatsa bo'ladi
+//private---- faqat classni ichida ishlaydi
+//protected---- faqat ozini va extend qilingan classlarda ishlaydi
 
