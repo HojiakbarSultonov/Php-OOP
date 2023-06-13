@@ -164,4 +164,13 @@ interface Animal {
 
 //Constants===================ozgarmas qiymat
 
-const BREED = "Doberman";
+//const BREED = "Doberman";
+
+
+
+require 'classes/Dog.php';
+require 'classes/Fruit.php';
+require 'Html/Table/php';
+require 'Kitchen/Table/php';
+
+$table = new Kitchen\Table();
