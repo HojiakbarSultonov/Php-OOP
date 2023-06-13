@@ -1,5 +1,6 @@
 <?php
-//
+//class ======================================
+
 //class Car {
 //    public $model;
 //    public $year;
@@ -20,20 +21,67 @@
 ////$bmw ->setModal('Bmw');
 //$bmw ->year = 2023;
 
-class Product {
-    public $name;
-    public $weight;
+//construct=======================================
+
+//class Product {
+//    public $name;
+//    public $weight;
+//
+//
+//    public function __construct($name, $weight )
+//    {
+//        $this->name = $name;
+//        $this->weight = $weight;
+//    }
+//}
+//
+//
+//$prod = new Product('Apple', '100gr');
+//
+//echo ($prod->name);
+//echo ($prod->weight);
+
+//inheritance(vorislanish)=====================================
+//extends
+//parent-child
+//overridding
+//final --- bu funksiyani oldiga yoki clasni oldiga qoyish mumkn. final yozilsa umuman u classdan voris olip bolmaydi!!!
 
 
-    public function __construct($name, $weight )
+
+
+
+class Car {
+    public $model;
+    public $year;
+    public function __construct($model, $year)
     {
-        $this->name = $name;
-        $this->weight = $weight;
+        $this->model=$model;
+        $this->year = $year;
+    }
+
+
+    public function driving()
+    {
+        return 'Driving Car ';
     }
 }
 
 
-$prod = new Product('Apple', '100gr');
+class PublicCar extends Car{
+    public $Ballon;
 
-echo ($prod->name);
-echo ($prod->weight);
+    //OVERRIDDING cardagi driving funksiyasini ustidan yozish
+    public function driving()
+    {
+        return 'Driving PublicCar ';
+    }
+
+
+}
+
+$bus = new PublicCar('Mersedes', '2023' );
+
+//var_dump($bus->Ballon = '20');
+//var_dump($bus->driving());
+
